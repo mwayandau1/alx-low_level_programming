@@ -1,8 +1,8 @@
-#include <studio.h>
+#include<stdio.h>
 /**
- * main - the is where the code is executed
- * Return: returns 0
- */
+ * main - the main function where the code is executed
+ * Return: returns 0 on success
+ **/
 
 int main(void)
 {

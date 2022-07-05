@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #include "dog.h"
 
@@ -18,4 +19,21 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 		d->age = age;
 		d->owner = owner;
 	}
+=======
+/**
+ * struct dog: New type struct
+ * @name : String name
+ * @age : float age
+ * @owner :String owner
+ *
+ * Return: no return
+ */
+
+
+struct dog
+{
+	char* name;
+	float age;
+	char* owner;
+>>>>>>> 5735716d632ee4ee163181af7eaafa073c84cc28
 }

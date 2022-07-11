@@ -1,39 +1,21 @@
-<<<<<<< HEAD
-
-#include "dog.h"
+#ifndef DOG
+#define DOG
 
 /**
- * init_dog - initializes a variable of type struct dog.
- * @d: struct dog.
- * @name: name of the dog.
- * @age: age of the dog.
- * @owner: owner of the dog.
- *
- * Return: no return.
- */
-void init_dog(struct dog *d, char *name, float age, char *owner)
-{
-	if (d)
-	{
-		d->name = name;
-		d->age = age;
-		d->owner = owner;
-	}
-=======
-/**
- * struct dog: New type struct
- * @name : String name
- * @age : float age
- * @owner :String owner
- *
- * Return: no return
- */
+ * struct dog - a description of a dog
+ * @name: specifies the name of the dog
+ * @age: stores the age of the dog
+ * @owner: stores the dog owner's name
+ * Description: a structure describes a dog.
+ **/
 
-
-struct dog
+typedef struct dog
 {
-	char* name;
+	char *name;
 	float age;
-	char* owner;
->>>>>>> 5735716d632ee4ee163181af7eaafa073c84cc28
-}
+	char *owner;
+} dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+#endif
+
